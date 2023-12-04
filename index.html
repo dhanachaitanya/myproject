@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div id="joke-container">
+        <div>
+            <select onchange="fetchJokeByCategory(this.value)" id="selectOption">
+                <option value="Career">career</option>
+                <option value="Celebrity">celebrity</option>
+                <option value="Food">food</option>
+                <!-- Add other options here -->
+            </select>
+        </div>
+        <div>
+            <button onclick="fetchJokeByCategory()">Get Chuck Norris Jokes</button>
+        </div>
+        <div id="joke-display"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
